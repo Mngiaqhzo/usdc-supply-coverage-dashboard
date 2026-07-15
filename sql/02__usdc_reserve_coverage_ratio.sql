@@ -15,7 +15,6 @@ WITH reserve_reports AS (
     SELECT *
     FROM (
         VALUES
-            -- Replace these sample figures before publishing.
             -- Format: (report_as_of_date, reported_reserves_usd, source_note)
             (DATE '2025-01-31', 42000000000.00, 'Sample placeholder - replace with actual issuer reserve figure'),
             (DATE '2025-02-28', 43000000000.00, 'Sample placeholder - replace with actual issuer reserve figure'),
