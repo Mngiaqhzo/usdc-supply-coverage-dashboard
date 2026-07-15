@@ -71,8 +71,6 @@ On-chain supply is directly observable from blockchain data. Reserve assets are 
 
 ## Dashboard Design
 
-Recommended Dune dashboard sections:
-
 ### Chart 1 — USDC Circulating Supply Trend
 
 * X-axis: `day`
