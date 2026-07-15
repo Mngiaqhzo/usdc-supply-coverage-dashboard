@@ -15,12 +15,31 @@ WITH reserve_reports AS (
     SELECT *
     FROM (
         VALUES
-            -- Format: (report_as_of_date, reported_reserves_usd, source_note)
-            (DATE '2025-01-31', 42000000000.00, 'Sample placeholder - replace with actual issuer reserve figure'),
-            (DATE '2025-02-28', 43000000000.00, 'Sample placeholder - replace with actual issuer reserve figure'),
-            (DATE '2025-03-31', 44000000000.00, 'Sample placeholder - replace with actual issuer reserve figure'),
-            (DATE '2025-04-30', 45000000000.00, 'Sample placeholder - replace with actual issuer reserve figure')
-    ) AS t(report_as_of_date, reported_reserves_usd, source_note)
+            (
+                DATE '2025-01-31',
+                53283800358.00,
+                'Circle USDC Reserve Report as of 2025-01-31'
+            ),
+            (
+                DATE '2025-02-28',
+                56349194760.00,
+                'Circle USDC Reserve Report as of 2025-02-28'
+            ),
+            (
+                DATE '2025-03-31',
+                60040707040.00,
+                'Circle USDC Reserve Report as of 2025-03-31'
+            ),
+            (
+                DATE '2025-04-30',
+                61477725087.00,
+                'Circle USDC Reserve Report as of 2025-04-30'
+            )
+    ) AS t(
+        report_as_of_date,
+        reported_reserves_usd,
+        source_note
+    )
 ),
 
 mint_burn_events AS (
